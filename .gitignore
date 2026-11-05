@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+07-specialization/09-finetuning/output/
+07-specialization/08-cuda/examples/vector_add
+07-specialization/08-cuda/examples/reduction
+07-specialization/08-cuda/examples/matmul_tiled
