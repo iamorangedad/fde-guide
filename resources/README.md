@@ -1,4 +1,6 @@
 # 精选资源(链接已核实)
+
+> [🏠 返回主页](../README.md)
 ## 书籍
 - 《Designing Data-Intensive Applications》— https://dataintensive.net/
 - 《金字塔原理》(Barbara Minto)
@@ -11,3 +13,7 @@
 - DeepLearning.AI 短课程 — https://www.deeplearning.ai/short-courses/
 - The Twelve-Factor App — https://12factor.net/
 - OWASP Top Ten — https://owasp.org/www-project-top-ten/
+
+---
+
+[🏠 返回主页](../README.md)

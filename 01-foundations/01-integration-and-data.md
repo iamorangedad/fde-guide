@@ -1,5 +1,7 @@
 # 第 1 章 系统集成与数据工程
 
+> [🏠 返回主页](../README.md)
+
 ## 学习目标
 - 掌握集成模式(点对点、批处理 ETL/ELT、事件驱动、CDC)及其取舍
 - 能设计幂等、可重试、可观测的数据管线
@@ -87,3 +89,7 @@ ETL/ELT、CDC、幂等、数据契约、SCD、死信队列、Cursor 分页
 
 ## 延伸阅读
 - Martin Kleppmann《Designing Data-Intensive Applications》— https://dataintensive.net/
+
+---
+
+[🏠 返回主页](../README.md)

@@ -1,5 +1,7 @@
 # 第 3 章 LLM 应用系统:RAG、Agent 与评测
 
+> [🏠 返回主页](../README.md)
+
 ## 学习目标
 - 理解 LLM 应用的系统构成与失效模式
 - 能设计与调优 RAG 管线,能构建受控的 Agent 工作流
@@ -81,3 +83,7 @@ RAG、嵌入、混合检索、重排序、工具调用、Agent/工作流、LLM-a
 - Anthropic:Building effective agents — https://www.anthropic.com/engineering/building-effective-agents
 - Hamel Husain 关于评测的文章 — https://hamel.dev/blog/posts/evals/
 - DeepLearning.AI 短课程 — https://www.deeplearning.ai/short-courses/
+
+---
+
+[🏠 返回主页](../README.md)

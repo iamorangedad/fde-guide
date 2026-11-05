@@ -1,5 +1,7 @@
 # 第 0 章 FDE 岗位全景
 
+> [🏠 返回主页](../README.md)
+
 ## 学习目标
 - 准确定义 FDE,并说明其与 SWE、SE、咨询顾问、PM 的区别
 - 理解 FDE 模式的起源与商业逻辑
@@ -65,3 +67,7 @@ FDE、嵌入式交付、产品化、发现(Discovery)、Delta/Dev
 ## 延伸阅读
 - Pragmatic Engineer:Forward Deployed Engineers — https://newsletter.pragmaticengineer.com/p/forward-deployed-engineers
 - Palantir 招聘 — https://www.palantir.com/careers/
+
+---
+
+[🏠 返回主页](../README.md)

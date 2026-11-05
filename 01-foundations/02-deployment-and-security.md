@@ -1,5 +1,7 @@
 # 第 2 章 部署、运维与安全
 
+> [🏠 返回主页](../README.md)
+
 ## 学习目标
 - 能把应用容器化并部署到云或客户私有环境
 - 理解十二要素应用、CI/CD、可观测性三支柱
@@ -73,3 +75,7 @@ CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8080"]
 ## 延伸阅读
 - The Twelve-Factor App — https://12factor.net/
 - OWASP Top Ten — https://owasp.org/www-project-top-ten/
+
+---
+
+[🏠 返回主页](../README.md)
