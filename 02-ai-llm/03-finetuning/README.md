@@ -1,13 +1,13 @@
-# 第 9 章 模型微调
+# 3.3 模型微调
 
-> [🏠 返回主页](../../README.md) · [返回本部分](../README.md)
+> [🏠 返回主页](../../README.md) · [返回第 3 章](../README.md) · [上一节 3.2](../02-cuda/README.md) · [下一节 3.4](../04-training/README.md)
 
-本章是专项。它不把微调写成所有 FDE 项目的默认步骤。会变更、必须引用原文的知识,优先用第 3 章的 RAG。微调用来改变回答的条件分布:格式、语气、工具调用的形状,或提示词稳定不下来的行为。
+本节是专项。它不把微调写成所有 FDE 项目的默认步骤。会变更、必须引用原文的知识,优先用第 3.1 节的 RAG。微调用来改变回答的条件分布:格式、语气、工具调用的形状,或提示词稳定不下来的行为。
 
 ## 先修
 
-- 第 3 章的提示、RAG 和评测
-- 矩阵乘法;不需要先读完第 8 章,但第 10 章的内存账会用到本章的参数量
+- 第 3.1 节的提示、RAG 和评测
+- 矩阵乘法;不需要先读完第 3.2 节,但第 3.4 节的内存账会用到本节的参数量
 - 交叉熵的定义: \(-\log p\)
 
 ## 学习目标
@@ -20,9 +20,9 @@
 
 ## 地图
 
-1. [何时微调,以及损失怎么定义](01-when-and-loss.md)
-2. [LoRA 与 QLoRA](02-lora-qlora.md)
-3. [数据、训练、合并与部署](03-data-train-deploy.md)
+1. [3.3.1 何时微调,以及损失怎么定义](01-when-and-loss.md)
+2. [3.3.2 LoRA 与 QLoRA](02-lora-qlora.md)
+3. [3.3.3 数据、训练、合并与部署](03-data-train-deploy.md)
 
 ## 代码
 
@@ -38,13 +38,13 @@
 | [examples/requirements-cpu.txt](examples/requirements-cpu.txt) | 已跑通的 CPU 版本 |
 
 ```bash
-python3 02-ai-llm/09-finetuning/tests/test_finetune_cpu.py
+python3 02-ai-llm/03-finetuning/tests/test_finetune_cpu.py
 ```
 
 安装 CPU 依赖后:
 
 ```bash
-python3 02-ai-llm/09-finetuning/examples/train_lora.py --steps 1 --self-check
+python3 02-ai-llm/03-finetuning/examples/train_lora.py --steps 1 --self-check
 ```
 
 `--self-check` 核对可训练参数量、冻结权重不被更新,以及 `merge_and_unload()` 前后 logits 一致。脚本打印的损失是这次随机初始化上的教学数值。随机模型的交叉熵会接近 \(\log|\mathrm{词表}|\),那只说明分布还接近均匀,不是质量分数。

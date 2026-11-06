@@ -1,12 +1,12 @@
-# 第 11 章 推理优化
+# 3.5 推理优化
 
-> [🏠 返回主页](../../README.md) · [返回本部分](../README.md)
+> [🏠 返回主页](../../README.md) · [返回第 3 章](../README.md) · [上一节 3.4](../04-training/README.md) · [下一节 3.6](../06-workflow/README.md)
 
-本章是专项。服务一个模型的 FDE 需要能回答:第一个 token 要多久、每个后续 token 要多久、尾延迟是多少、KV cache 会占多少字节、以及这些数在什么负载下会互相牺牲。本章的数字来自定义和排队模型,不来自一次未做的 GPU 压测。
+本节是专项。服务一个模型的 FDE 需要能回答:第一个 token 要多久、每个后续 token 要多久、尾延迟是多少、KV cache 会占多少字节、以及这些数在什么负载下会互相牺牲。本节的数字来自定义和排队模型,不来自一次未做的 GPU 压测。
 
 ## 先修
 
-第 8 章的算术强度,第 10 章的字节账。不要求先部署过 vLLM。
+第 3.2 节的算术强度,第 3.4 节的字节账。不要求先部署过 vLLM。
 
 ## 学习目标
 
@@ -17,9 +17,9 @@
 
 ## 地图
 
-1. [预填、解码与 KV cache](01-prefill-decode-kv.md)
-2. [组批、量化与投机解码](02-batching-quant-speculative.md)
-3. [容量、剖析与可重复负载试验](03-serving-profiling-loadtest.md)
+1. [3.5.1 预填、解码与 KV cache](01-prefill-decode-kv.md)
+2. [3.5.2 组批、量化与投机解码](02-batching-quant-speculative.md)
+3. [3.5.3 容量、剖析与可重复负载试验](03-serving-profiling-loadtest.md)
 
 ## 代码
 
@@ -32,12 +32,12 @@
 | [py/loadsim.py](py/loadsim.py) | 串行、静态组批、阻塞式连续组批的排队模型 |
 
 ```bash
-python3 02-ai-llm/11-inference/tests/test_inference_math.py
+python3 02-ai-llm/05-inference/tests/test_inference_math.py
 ```
 
 ## 小结
 
-预填可以吃算力,解码常常吃带宽。缓存的字节按层数、KV 头数和序列长度相乘。组批提高的是设备吞吐,尾延迟要单独设门。任何加速比都必须附带硬件、软件、负载和正确性结果;本章不提供这样的实测。
+预填可以吃算力,解码常常吃带宽。缓存的字节按层数、KV 头数和序列长度相乘。组批提高的是设备吞吐,尾延迟要单独设门。任何加速比都必须附带硬件、软件、负载和正确性结果;本节不提供这样的实测。
 
 ## 关键术语
 

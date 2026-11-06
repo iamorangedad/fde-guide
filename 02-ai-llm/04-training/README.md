@@ -1,12 +1,12 @@
-# 第 10 章 训练优化
+# 3.4 训练优化
 
-> [🏠 返回主页](../../README.md) · [返回本部分](../README.md)
+> [🏠 返回主页](../../README.md) · [返回第 3 章](../README.md) · [上一节 3.3](../03-finetuning/README.md) · [下一节 3.5](../05-inference/README.md)
 
-本章是专项。它把"显存不够"拆成可以核对的字节,并把"再开一个开关"换成一次只改一个因素的实验。本章没有在多 GPU 上运行 DDP 或 FSDP。那些小节讲的是通信和内存的取舍,以及文档里的正确性约束,不是一份已经测过的加速表。
+本节是专项。它把"显存不够"拆成可以核对的字节,并把"再开一个开关"换成一次只改一个因素的实验。本节没有在多 GPU 上运行 DDP 或 FSDP。那些小节讲的是通信和内存的取舍,以及文档里的正确性约束,不是一份已经测过的加速表。
 
 ## 先修
 
-第 9 章的可训练参数量。知道反向传播会保存前向激活。不要求先写过分布式程序。
+第 3.3 节的可训练参数量。知道反向传播会保存前向激活。不要求先写过分布式程序。
 
 ## 学习目标
 
@@ -18,9 +18,9 @@
 
 ## 地图
 
-1. [内存账与混合精度](01-memory-precision.md)
-2. [累积、检查点、打包与数据加载](02-batch-checkpoint-packing.md)
-3. [数据并行、分片与剖析](03-distributed-profiling.md)
+1. [3.4.1 内存账与混合精度](01-memory-precision.md)
+2. [3.4.2 累积、检查点、打包与数据加载](02-batch-checkpoint-packing.md)
+3. [3.4.3 数据并行、分片与剖析](03-distributed-profiling.md)
 
 ## 代码
 
@@ -32,7 +32,7 @@
 | [py/experiment_log.py](py/experiment_log.py) | 种子、配置、数据哈希、库版本 |
 
 ```bash
-python3 02-ai-llm/10-training/tests/test_training_math.py
+python3 02-ai-llm/04-training/tests/test_training_math.py
 ```
 
 ## 小结

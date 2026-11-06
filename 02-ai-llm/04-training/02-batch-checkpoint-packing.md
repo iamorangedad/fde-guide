@@ -1,10 +1,10 @@
-# 10.2 累积、检查点、打包与数据加载
+# 3.4.2 累积、检查点、打包与数据加载
 
-> [🏠 返回主页](../../README.md) · [返回本章](README.md)
+> [🏠 返回主页](../../README.md) · [返回第 3 章](../README.md) · [返回 3.4](README.md) · [上一节](01-memory-precision.md) · [下一节](03-distributed-profiling.md)
 
 ## 先修
 
-[10.1](01-memory-precision.md) 的激活账,第 9 章的 token 屏蔽。
+[3.4.1](01-memory-precision.md) 的激活账,第 3.3 节的 token 屏蔽。
 
 ## 学习目标
 

@@ -1,10 +1,10 @@
-# 8.2 内存层次与合并访问
+# 3.2.2 内存层次与合并访问
 
-> [🏠 返回主页](../../README.md) · [返回本章](README.md)
+> [🏠 返回主页](../../README.md) · [返回第 3 章](../README.md) · [返回 3.2](README.md) · [上一节](01-execution-simt.md) · [下一节](03-sync-reduction.md)
 
 ## 先修
 
-[8.1](01-execution-simt.md) 的 warp。知道字节地址即可,不需要先学缓存一致性协议。
+[3.2.1](01-execution-simt.md) 的 warp。知道字节地址即可,不需要先学缓存一致性协议。
 
 ## 学习目标
 
@@ -73,7 +73,7 @@ CPU 模型可以直接核对上面四则演算:
 python3 -c "from coalesce import *; print(count_segments(consecutive_float_addresses(0)), count_segments(consecutive_float_addresses(4)))"
 ```
 
-需要先把 `02-ai-llm/08-cuda/py` 放进 `PYTHONPATH`,或运行 [测试](tests/test_cuda_models.py)。测试锁定:对齐 4 段、错位 5 段、跨步 32 段、行距 32 的冲突度 32、行距 33 的冲突度 1。
+需要先把 `02-ai-llm/02-cuda/py` 放进 `PYTHONPATH`,或运行 [测试](tests/test_cuda_models.py)。测试锁定:对齐 4 段、错位 5 段、跨步 32 段、行距 32 的冲突度 32、行距 33 的冲突度 1。
 
 ## 排障
 

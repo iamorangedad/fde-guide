@@ -1,10 +1,10 @@
-# 11.1 预填、解码与 KV cache
+# 3.5.1 预填、解码与 KV cache
 
-> [🏠 返回主页](../../README.md) · [返回本章](README.md)
+> [🏠 返回主页](../../README.md) · [返回第 3 章](../README.md) · [返回 3.5](README.md) · [下一节](02-batching-quant-speculative.md)
 
 ## 先修
 
-矩阵乘的 FLOP 数 \(2mnk\),第 8 章的算术强度。Transformer 的自注意力只需要"每个 token 产生一组 K 和 V"这一事实,论文见 Vaswani 等人。
+矩阵乘的 FLOP 数 \(2mnk\),第 3.2 节的算术强度。Transformer 的自注意力只需要"每个 token 产生一组 K 和 V"这一事实,论文见 Vaswani 等人。
 
 ## 学习目标
 
@@ -30,7 +30,7 @@ $$
 
 一个解码步的矩阵乘是矩阵乘向量。权重 \(W\) 形状 \((d_{\mathrm{out}}, d_{\mathrm{in}})\),FLOP 数 \(2 d_{\mathrm{out}} d_{\mathrm{in}}\)。若权重不在片上复用,读权重的字节约是 \(d_{\mathrm{out}} d_{\mathrm{in}} b\),向量本身相对很小。算术强度约 \(2/b\) FLOP/byte。fp16 或 bf16 的 \(b=2\),强度约 1 FLOP/byte。
 
-把第 8 章那个假设设备的脊点 50 FLOP/byte 拿来对照,1 远低于 50:在这组假设峰值下,解码的上界是带宽顶。这不是对你的 GPU 的测量。预填把多个 token 堆成矩阵乘矩阵,强度随参与的 token 数上升,长提示才有机会离开带宽顶。所以"预填吃算力、解码吃带宽"是强度公式的结论,成立与否要代入你的 \(\pi\)、\(\beta\) 和真实的访存(权重是否重复读、KV 是否已经在缓存里)。
+把第 3.2 节那个假设设备的脊点 50 FLOP/byte 拿来对照,1 远低于 50:在这组假设峰值下,解码的上界是带宽顶。这不是对你的 GPU 的测量。预填把多个 token 堆成矩阵乘矩阵,强度随参与的 token 数上升,长提示才有机会离开带宽顶。所以"预填吃算力、解码吃带宽"是强度公式的结论,成立与否要代入你的 \(\pi\)、\(\beta\) 和真实的访存(权重是否重复读、KV 是否已经在缓存里)。
 
 ## 原理:KV 字节
 
@@ -81,7 +81,7 @@ flowchart LR
 ```bash
 python3 -c "
 import sys
-sys.path[:0]=['02-ai-llm/11-inference/py']
+sys.path[:0]=['02-ai-llm/05-inference/py']
 from kv_cache import kv_cache_bytes
 from latency import request_latency
 print(kv_cache_bytes(32, 8, 128, 4096))

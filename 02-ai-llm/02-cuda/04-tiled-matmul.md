@@ -1,10 +1,10 @@
-# 8.4 分块矩阵乘
+# 3.2.4 分块矩阵乘
 
-> [🏠 返回主页](../../README.md) · [返回本章](README.md)
+> [🏠 返回主页](../../README.md) · [返回第 3 章](../README.md) · [返回 3.2](README.md) · [上一节](03-sync-reduction.md) · [下一节](05-occupancy-roofline.md)
 
 ## 先修
 
-[8.2](02-memory-coalescing.md) 的合并访问和 bank 填充,[8.3](03-sync-reduction.md) 的屏障。矩阵按行主序存储:\(A\) 是 \(M\times K\),\(B\) 是 \(K\times N\),\(C\) 是 \(M\times N\)。
+[3.2.2](02-memory-coalescing.md) 的合并访问和 bank 填充,[3.2.3](03-sync-reduction.md) 的屏障。矩阵按行主序存储:\(A\) 是 \(M\times K\),\(B\) 是 \(K\times N\),\(C\) 是 \(M\times N\)。
 
 ## 学习目标
 
@@ -54,7 +54,7 @@ $$
 
 \(M,N,K\) 不是 tile 的倍数时,越界的 \(A\) 或 \(B\) 元素按 0 装入共享内存,越界的 \(C\) 不写。0 不改变和。因此 \(18\times 19\) 乘 \(19\times 20\)、tile 为 16 的结果必须和三重循环一致。[reference_kernels.py](py/reference_kernels.py) 的 `matmul_tiled_sim` 按线程下标模拟了这一规则,测试覆盖了这个不能整除的形状。
 
-共享内存声明为 `[TILE][TILE+1]`。计算时按列读 `As[ty][k]` 与按行读 `Bs[k][tx]` 的 bank 行为不同;填充的是第 8.2 节那一列,避免行距成为 32 的倍数。\(\mathrm{TILE}=16\) 时行距 16 本身不一定打满 32 个冲突,填充仍然是同一条地址规则,而不是只对 32 才合法。
+共享内存声明为 `[TILE][TILE+1]`。计算时按列读 `As[ty][k]` 与按行读 `Bs[k][tx]` 的 bank 行为不同;填充的是第 3.2.2 节那一列,避免行距成为 32 的倍数。\(\mathrm{TILE}=16\) 时行距 16 本身不一定打满 32 个冲突,填充仍然是同一条地址规则,而不是只对 32 才合法。
 
 ```mermaid
 flowchart LR
@@ -77,7 +77,7 @@ flowchart LR
 CPU 侧不需要 nvcc:
 
 ```bash
-python3 02-ai-llm/08-cuda/tests/test_cuda_models.py
+python3 02-ai-llm/02-cuda/tests/test_cuda_models.py
 ```
 
 ## 排障

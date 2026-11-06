@@ -16,7 +16,7 @@
 
 ## 专项:GPU、训练与推理
 
-以下链接在编写专项时核对过。它们服务 [02 AI/LLM](../02-ai-llm/README.md) 里的第 8–12 章,不是通识部分的必读。第 3 章的 RAG 与评测仍用上面的文章。
+以下链接在编写专项时核对过。它们服务[第 3 章](../02-ai-llm/README.md)的 3.2–3.6 节,不是通识部分的必读。[3.1](../02-ai-llm/01-applications/README.md) 的 RAG 与评测仍用上面的文章。
 
 - CUDA Programming Guide — https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html
 - CUDA 编程模型 — https://docs.nvidia.com/cuda/cuda-programming-guide/01-introduction/programming-model.html
