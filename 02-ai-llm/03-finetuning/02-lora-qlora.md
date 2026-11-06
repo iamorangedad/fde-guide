@@ -1,10 +1,10 @@
-# 9.2 LoRA 与 QLoRA
+# 3.3.2 LoRA 与 QLoRA
 
-> [🏠 返回主页](../../README.md) · [返回本章](README.md)
+> [🏠 返回主页](../../README.md) · [返回第 3 章](../README.md) · [返回 3.3](README.md) · [上一节](01-when-and-loss.md) · [下一节](03-data-train-deploy.md)
 
 ## 先修
 
-矩阵形状、[9.1](01-when-and-loss.md) 的 SFT 目标。不需要 GPU。
+矩阵形状、[3.3.1](01-when-and-loss.md) 的 SFT 目标。不需要 GPU。
 
 ## 学习目标
 
@@ -60,7 +60,7 @@ $$
 r(d+d_{\mathrm{ff}}) = 8\times 15104 = 120832
 $$
 
-三块一层是 \(362496\),32 层是 \(11599872\)。q/k/v/o 与这三块 MLP 合计 \(8388608+11599872=19988480\) 个可训练参数。全量 MLP 的参数量是 \(32\times 3\times 4096\times 11008\),比 LoRA 大两个数量级。把这些数写成"节省了 99% 内存"是错的:节省的是**这些矩阵的梯度和优化器状态**。冻结基座的权重还在,前向激活还在。第 10 章把两笔账分开。
+三块一层是 \(362496\),32 层是 \(11599872\)。q/k/v/o 与这三块 MLP 合计 \(8388608+11599872=19988480\) 个可训练参数。全量 MLP 的参数量是 \(32\times 3\times 4096\times 11008\),比 LoRA 大两个数量级。把这些数写成"节省了 99% 内存"是错的:节省的是**这些矩阵的梯度和优化器状态**。冻结基座的权重还在,前向激活还在。第 3.4 节把两笔账分开。
 
 GPT-2 的 `c_attn` 是融合的 QKV,输出维是 \(3d\) 而不是 \(d\)。教学脚本只适配 `c_attn` 时,一层的参数量是
 
@@ -102,7 +102,7 @@ Dettmers 等人的 QLoRA 把冻结基座存成 NormalFloat4:按正态分位数�
 ```bash
 python3 -c "
 import sys
-sys.path.insert(0,'02-ai-llm/09-finetuning/examples')
+sys.path.insert(0,'02-ai-llm/03-finetuning/examples')
 from lora_math import attention_lora_count, trainable_fraction
 t = attention_lora_count(32, 4096, 8)
 print(t, trainable_fraction(t, 32*4*4096*4096))
@@ -125,7 +125,7 @@ QLoRA 的 bitsandbytes 路径依赖特定 GPU 和 CUDA,编写环境没有运行�
 
 1. \(d_{\mathrm{in}}=1024\),\(d_{\mathrm{out}}=2048\),\(r=16\)。LoRA 参数量是多少?全量参数量是多少?
 2. 为什么只把秩从 8 加到 64,不能推出保留集分数会上升?
-3. 客户有一张 24 GiB 的卡,想全量微调一个假设的 \(7\times 10^9\) 参数模型。仅凭第 10 章"混合精度 Adam 约 16 字节/参数"这一条静态账,能不能放得下?LoRA 改变的是哪一项?
+3. 客户有一张 24 GiB 的卡,想全量微调一个假设的 \(7\times 10^9\) 参数模型。仅凭第 3.4 节"混合精度 Adam 约 16 字节/参数"这一条静态账,能不能放得下?LoRA 改变的是哪一项?
 
 ### 参考解答
 
