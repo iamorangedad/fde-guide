@@ -77,7 +77,7 @@ flowchart LR
 CPU 侧不需要 nvcc:
 
 ```bash
-python3 07-specialization/08-cuda/tests/test_cuda_models.py
+python3 02-ai-llm/08-cuda/tests/test_cuda_models.py
 ```
 
 ## 排障

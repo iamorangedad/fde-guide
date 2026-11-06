@@ -11,11 +11,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def main() -> int:
     suites = [
-        ROOT / "07-specialization/08-cuda/tests/test_cuda_models.py",
-        ROOT / "07-specialization/09-finetuning/tests/test_finetune_cpu.py",
-        ROOT / "07-specialization/10-training/tests/test_training_math.py",
-        ROOT / "07-specialization/11-inference/tests/test_inference_math.py",
-        ROOT / "07-specialization/12-workflow/tests/test_gates.py",
+        ROOT / "02-ai-llm/08-cuda/tests/test_cuda_models.py",
+        ROOT / "02-ai-llm/09-finetuning/tests/test_finetune_cpu.py",
+        ROOT / "02-ai-llm/10-training/tests/test_training_math.py",
+        ROOT / "02-ai-llm/11-inference/tests/test_inference_math.py",
+        ROOT / "02-ai-llm/12-workflow/tests/test_gates.py",
         ROOT / "tests/test_markdown_links.py",
     ]
     failed = False
@@ -23,9 +23,9 @@ def main() -> int:
         print(f"== {suite.relative_to(ROOT)}", flush=True)
         result = subprocess.run([sys.executable, str(suite)], cwd=ROOT)
         failed = failed or result.returncode != 0
-    optional = ROOT / "07-specialization/09-finetuning/tests/test_train_optional.py"
+    optional = ROOT / "02-ai-llm/09-finetuning/tests/test_train_optional.py"
     if optional.exists():
-        print(f"== {optional.relative_to(ROOT)} (缺少 torch/transformers/peft 时跳过)")
+        print(f"== {optional.relative_to(ROOT)} (缺少 torch/transformers/peft 时跳过)", flush=True)
         result = subprocess.run([sys.executable, str(optional)], cwd=ROOT)
         failed = failed or result.returncode != 0
     return 1 if failed else 0

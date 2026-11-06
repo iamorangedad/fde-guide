@@ -102,7 +102,7 @@ Dettmers 等人的 QLoRA 把冻结基座存成 NormalFloat4:按正态分位数�
 ```bash
 python3 -c "
 import sys
-sys.path.insert(0,'07-specialization/09-finetuning/examples')
+sys.path.insert(0,'02-ai-llm/09-finetuning/examples')
 from lora_math import attention_lora_count, trainable_fraction
 t = attention_lora_count(32, 4096, 8)
 print(t, trainable_fraction(t, 32*4*4096*4096))

@@ -1,6 +1,6 @@
 # 第 8 章 GPU 与 CUDA 编程
 
-> [🏠 返回主页](../../README.md) · [返回专项](../README.md)
+> [🏠 返回主页](../../README.md) · [返回本部分](../README.md)
 
 本章是专项。目标是让你能读懂一个内核为什么慢,并写出可以核对正确性的 CUDA,而不是背一组与设备无关的"最佳 block size"。
 
@@ -40,17 +40,17 @@
 有 CUDA 工具链和 GPU 时:
 
 ```bash
-cd 07-specialization/08-cuda/examples
+cd 02-ai-llm/08-cuda/examples
 make
 ./vector_add
 ./reduction
 ./matmul_tiled
 ```
 
-程序会打印 `cudaGetDeviceProperties` 的上限,并用全 1 或小整数数据做精确比较。打印的毫秒数只描述那一次运行。没有 GPU 时不要把"编译失败"理解成算法失败;先跑:
+程序会打印 `cudaGetDeviceProperties` 的上限,并用全 1 或小整数数据做精确比较。打印的毫秒数只描述那一次运行。编写本教程的环境没有 `nvidia-smi` 和 `nvcc`,这三个程序没有编译,也没有在 GPU 上运行。没有 GPU 时不要把"编译失败"理解成算法失败;先跑:
 
 ```bash
-python3 07-specialization/08-cuda/tests/test_cuda_models.py
+python3 02-ai-llm/08-cuda/tests/test_cuda_models.py
 ```
 
 ## 硬件相关的限制

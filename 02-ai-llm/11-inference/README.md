@@ -1,6 +1,6 @@
 # 第 11 章 推理优化
 
-> [🏠 返回主页](../../README.md) · [返回专项](../README.md)
+> [🏠 返回主页](../../README.md) · [返回本部分](../README.md)
 
 本章是专项。服务一个模型的 FDE 需要能回答:第一个 token 要多久、每个后续 token 要多久、尾延迟是多少、KV cache 会占多少字节、以及这些数在什么负载下会互相牺牲。本章的数字来自定义和排队模型,不来自一次未做的 GPU 压测。
 
@@ -32,7 +32,7 @@
 | [py/loadsim.py](py/loadsim.py) | 串行、静态组批、阻塞式连续组批的排队模型 |
 
 ```bash
-python3 07-specialization/11-inference/tests/test_inference_math.py
+python3 02-ai-llm/11-inference/tests/test_inference_math.py
 ```
 
 ## 小结
