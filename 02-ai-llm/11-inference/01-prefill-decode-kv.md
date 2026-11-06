@@ -81,7 +81,7 @@ flowchart LR
 ```bash
 python3 -c "
 import sys
-sys.path[:0]=['07-specialization/11-inference/py']
+sys.path[:0]=['02-ai-llm/11-inference/py']
 from kv_cache import kv_cache_bytes
 from latency import request_latency
 print(kv_cache_bytes(32, 8, 128, 4096))

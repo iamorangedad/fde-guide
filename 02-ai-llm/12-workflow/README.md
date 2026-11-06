@@ -1,6 +1,6 @@
 # 第 12 章 端到端专业流程与综合案例
 
-> [🏠 返回主页](../../README.md) · [返回专项](../README.md)
+> [🏠 返回主页](../../README.md) · [返回本部分](../README.md)
 
 本章把第 8–11 章收成一条可以交付的工作顺序。它仍然是专项:不做模型训练或推理容量的 FDE 项目,用第 1–4 章的集成、安全和范围说明书就够了。本章的综合案例是虚构的澄海仓储,预算和延迟都是题目中的给定,不是测量。
 
@@ -24,7 +24,7 @@
 [py/gates.py](py/gates.py) 检查计划是否只有一个自变量,以及观测值有没有越过门。它不生成指标。
 
 ```bash
-python3 07-specialization/12-workflow/tests/test_gates.py
+python3 02-ai-llm/12-workflow/tests/test_gates.py
 ```
 
 ## 小结

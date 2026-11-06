@@ -73,7 +73,7 @@ CPU 模型可以直接核对上面四则演算:
 python3 -c "from coalesce import *; print(count_segments(consecutive_float_addresses(0)), count_segments(consecutive_float_addresses(4)))"
 ```
 
-需要先把 `07-specialization/08-cuda/py` 放进 `PYTHONPATH`,或运行 [测试](tests/test_cuda_models.py)。测试锁定:对齐 4 段、错位 5 段、跨步 32 段、行距 32 的冲突度 32、行距 33 的冲突度 1。
+需要先把 `02-ai-llm/08-cuda/py` 放进 `PYTHONPATH`,或运行 [测试](tests/test_cuda_models.py)。测试锁定:对齐 4 段、错位 5 段、跨步 32 段、行距 32 的冲突度 32、行距 33 的冲突度 1。
 
 ## 排障
 

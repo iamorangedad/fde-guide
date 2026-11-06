@@ -1,6 +1,6 @@
 # 第 10 章 训练优化
 
-> [🏠 返回主页](../../README.md) · [返回专项](../README.md)
+> [🏠 返回主页](../../README.md) · [返回本部分](../README.md)
 
 本章是专项。它把"显存不够"拆成可以核对的字节,并把"再开一个开关"换成一次只改一个因素的实验。本章没有在多 GPU 上运行 DDP 或 FSDP。那些小节讲的是通信和内存的取舍,以及文档里的正确性约束,不是一份已经测过的加速表。
 
@@ -32,7 +32,7 @@
 | [py/experiment_log.py](py/experiment_log.py) | 种子、配置、数据哈希、库版本 |
 
 ```bash
-python3 07-specialization/10-training/tests/test_training_math.py
+python3 02-ai-llm/10-training/tests/test_training_math.py
 ```
 
 ## 小结
