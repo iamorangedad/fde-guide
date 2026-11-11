@@ -1,6 +1,6 @@
 # 3.6 PyTorch 工程实践（框架层，不是硬件）
 
-> [🏠 返回主页](../../README.md) · [返回本章入口](README.md) · [上一节 3.5](05-neural-nets-and-transformers.md) · [下一节 3.7](07-training-and-inference-systems.md)
+> [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.5](05-neural-nets-and-transformers.md) · [下一节 3.7](07-training-and-inference-systems.md)
 
 ## 先修
 
@@ -109,4 +109,4 @@ Parameter、autograd、Module、AdamW、ignore_index、device、梯度累积
 
 ---
 
-[🏠 返回主页](../../README.md) · [返回本章入口](README.md)
+[🏠 返回主页](../README.md) · [返回本章入口](README.md)

@@ -1,6 +1,6 @@
 # 3.1 业务需求、约束与模型选型
 
-> [🏠 返回主页](../../README.md) · [返回本章入口](README.md) · [下一节 3.2](02-applications-rag-agent-eval.md)
+> [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [下一节 3.2](02-applications-rag-agent-eval.md)
 
 ## 先修
 
@@ -95,4 +95,4 @@ FDE 的第一章不是 CUDA，而是把业务写成约束与可测任务。方�
 
 ---
 
-[🏠 返回主页](../../README.md) · [返回本章入口](README.md)
+[🏠 返回主页](../README.md) · [返回本章入口](README.md)

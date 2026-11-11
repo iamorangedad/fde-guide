@@ -1,6 +1,6 @@
 # 3.9 Linux I/O 与存储栈（系统层补充）
 
-> [🏠 返回主页](../../README.md) · [返回本章入口](README.md) · [上一节 3.8](08-cuda-and-gpu-kernels.md)
+> [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.8](08-cuda-and-gpu-kernels.md)
 
 ## 先修
 3.6（PyTorch 工程，数据加载）、3.7（训练与推理系统）。
@@ -100,4 +100,4 @@ NFS、Ceph、SMB 的延迟和一致性语义与本地盘不同，元数据操作
 
 ---
 
-[🏠 返回主页](../../README.md) · [返回本章入口](README.md)
+[🏠 返回主页](../README.md) · [返回本章入口](README.md)
