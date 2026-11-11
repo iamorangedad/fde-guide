@@ -1,6 +1,6 @@
 # 3.8 GPU 与 CUDA（选修进阶）
 
-> [🏠 返回主页](../../README.md) · [返回本章入口](README.md) · [上一节 3.7](07-training-and-inference-systems.md)
+> [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.7](07-training-and-inference-systems.md)
 
 ## 先修
 
@@ -14,7 +14,7 @@
 - **未**在 Jetson 或其它 GPU 上做运行验证；
 - 下列公式与 Python 参考演算可在 CPU 复核；任何毫秒级加速比均**不得**从本文抄走当测量结果。
 
-仓库 `iamorangedad/fde-guide` 中旧版 `02-cuda` 含有示例与测试，但在上级目录,与本稿并存。
+本章不含可编译的 `.cu` 示例;需要上 GPU 验证时，请自行编写并记录实验结果。
 
 ## 学习目标
 
@@ -94,10 +94,9 @@ SIMT、warp、合并访存、共享内存、归约、tile、屋顶线、算术�
 
 - CUDA C++ Programming Guide（NVIDIA 官方）— https://docs.nvidia.com/cuda/cuda-c-programming-guide/
 - Volkov 等关于占用率与性能的经典讨论（搜索 "Better Performance at Lower Occupancy"）
-- 仓库旧材料（若可访问）：`02-ai-llm/02-cuda/`（编号与本稿不同，且需自备 GPU 验证）
 
 ---
 
-[🏠 返回主页](../../README.md) · [返回本章入口](README.md)
+[🏠 返回主页](../README.md) · [返回本章入口](README.md)
 
 下一节：[3.9 Linux I/O 与存储栈](09-linux-io-and-storage-stack.md)

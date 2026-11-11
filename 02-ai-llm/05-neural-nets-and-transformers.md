@@ -1,6 +1,6 @@
 # 3.5 神经网络与 Transformer
 
-> [🏠 返回主页](../../README.md) · [返回本章入口](README.md) · [上一节 3.4](04-finetuning-and-alignment.md) · [下一节 3.6](06-pytorch-engineering.md)
+> [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.4](04-finetuning-and-alignment.md) · [下一节 3.6](06-pytorch-engineering.md)
 
 ## 先修
 
@@ -113,4 +113,4 @@ Transformer 解码器 = 因果注意力 + 前馈的堆叠；语言建模损失�
 
 ---
 
-[🏠 返回主页](../../README.md) · [返回本章入口](README.md)
+[🏠 返回主页](../README.md) · [返回本章入口](README.md)

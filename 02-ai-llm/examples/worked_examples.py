@@ -1,8 +1,8 @@
-"""CPU-only worked examples for Chapter 3 draft.
+"""CPU-only worked examples for Chapter 3.
 
 No model downloads, no CUDA. Run:
-  python3 examples/worked_examples.py
-  python3 examples/test_worked_examples.py
+  python3 02-ai-llm/examples/worked_examples.py
+  python3 02-ai-llm/examples/test_worked_examples.py
 """
 from __future__ import annotations
 
