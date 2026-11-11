@@ -16,6 +16,7 @@ def main() -> int:
         ROOT / "02-ai-llm/04-training/tests/test_training_math.py",
         ROOT / "02-ai-llm/05-inference/tests/test_inference_math.py",
         ROOT / "02-ai-llm/06-workflow/tests/test_gates.py",
+        ROOT / "02-ai-llm/textbook/examples/test_worked_examples.py",
         ROOT / "tests/test_markdown_links.py",
     ]
     failed = False
