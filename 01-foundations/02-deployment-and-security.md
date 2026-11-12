@@ -1,5 +1,7 @@
 # 第 2 章 部署、运维与安全
 
+> 🌐 [English](02-deployment-and-security.en.md)
+
 > [🏠 返回主页](../README.md)
 
 > 先修：[预备章 Linux 基础](00-linux-basics.md)。本章的容器、权限、网络与日志都建立在那一章之上。

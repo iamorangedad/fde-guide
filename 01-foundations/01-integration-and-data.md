@@ -1,5 +1,7 @@
 # 第 1 章 系统集成与数据工程
 
+> 🌐 [English](01-integration-and-data.en.md)
+
 > [🏠 返回主页](../README.md)
 
 ## 学习目标

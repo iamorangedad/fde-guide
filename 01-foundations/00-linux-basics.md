@@ -1,5 +1,7 @@
 # 预备章 Linux 基础
 
+> 🌐 [English](00-linux-basics.en.md)
+
 > [🏠 返回主页](../README.md)
 
 本章是[第 1 章](01-integration-and-data.md)（系统集成）与[第 2 章](02-deployment-and-security.md)（部署、运维与安全）的先修，不占用章号，也不改动后面各章的编号。它面向要在客户机器和 GPU 服务器上部署软件的人：目标不是把你变成内核开发者，而是让你在陌生的 Linux 环境里能独立完成体检、排障和交付。

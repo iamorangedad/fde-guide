@@ -1,5 +1,7 @@
 # 3.1 业务需求、约束与模型选型
 
+> 🌐 [English](01-business-and-model-choice.en.md)
+
 > [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [下一节 3.2](02-applications-rag-agent-eval.md)
 
 ## 先修

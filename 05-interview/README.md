@@ -1,5 +1,7 @@
 # 第 6 章 面试准备
 
+> 🌐 [English](README.en.md)
+
 > [🏠 返回主页](../README.md)
 
 ## 学习目标

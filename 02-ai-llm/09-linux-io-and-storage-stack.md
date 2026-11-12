@@ -1,5 +1,7 @@
 # 3.9 Linux I/O 与存储栈（系统层补充）
 
+> 🌐 [English](09-linux-io-and-storage-stack.en.md)
+
 > [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.8](08-cuda-and-gpu-kernels.md)
 
 ## 先修

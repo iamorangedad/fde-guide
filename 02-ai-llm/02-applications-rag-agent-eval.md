@@ -1,5 +1,7 @@
 # 3.2 应用系统：RAG、Agent 与评测
 
+> 🌐 [English](02-applications-rag-agent-eval.en.md)
+
 > [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.1](01-business-and-model-choice.md) · [下一节 3.3](03-pretraining-and-adaptation.md)
 
 ## 先修
