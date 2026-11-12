@@ -1,10 +1,10 @@
 # 3.4 微调与对齐：SFT、RLHF、PPO、GRPO、DPO
 
-> [🏠 返回主页](../../README.md) · [返回本章入口](README.md) · [上一节 3.3](03-pretraining-and-adaptation.md) · [下一节 3.5](05-neural-nets-and-transformers.md)
+> [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.3](03-pretraining-and-adaptation.md) · [下一节 3.5](05-neural-nets-and-transformers.md)
 
 ## 先修
 
-[3.1](01-business-and-model-choice.md)–[3.3](03-pretraining-and-adaptation.md)。本节以**概念与选型**为主；反向传播与注意力在 [3.5](05-neural-nets-and-transformers.md)，LoRA 参数量与内存账在后文与 [3.7](07-training-and-inference-systems.md) 展开。仓库旧版「何时微调 / LoRA」材料的深度被吸收进本节与演算脚本，但章节编号以本稿为准。
+[3.1](01-business-and-model-choice.md)–[3.3](03-pretraining-and-adaptation.md)。本节以**概念与选型**为主；反向传播与注意力在 [3.5](05-neural-nets-and-transformers.md)，LoRA 参数量与内存账在后文与 [3.7](07-training-and-inference-systems.md) 展开。「何时微调 / LoRA」的深度已并入本节与 `examples/` 中的演算脚本。
 
 ## 学习目标
 
@@ -121,4 +121,4 @@ SFT、LoRA、QLoRA、RLHF、奖励模型、PPO、GRPO、DPO、KL 约束、提示
 
 ---
 
-[🏠 返回主页](../../README.md) · [返回本章入口](README.md)
+[🏠 返回主页](../README.md) · [返回本章入口](README.md)

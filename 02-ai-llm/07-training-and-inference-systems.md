@@ -1,6 +1,6 @@
 # 3.7 训练与推理系统性能
 
-> [🏠 返回主页](../../README.md) · [返回本章入口](README.md) · [上一节 3.6](06-pytorch-engineering.md) · [下一节 3.8](08-cuda-and-gpu-kernels.md)
+> [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.6](06-pytorch-engineering.md) · [下一节 3.8](08-cuda-and-gpu-kernels.md)
 
 ## 先修
 
@@ -97,4 +97,4 @@ Adam 静态状态、激活检查点、预填、解码、TTFT、TPOT、GQA、KV c
 
 ---
 
-[🏠 返回主页](../../README.md) · [返回本章入口](README.md)
+[🏠 返回主页](../README.md) · [返回本章入口](README.md)
