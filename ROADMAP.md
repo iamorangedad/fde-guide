@@ -1,8 +1,8 @@
 # 学习路线(12 周;在职可按 24 周,每项时长翻倍)
 
 > [🏠 返回主页](./README.md)
-- [ ] W1 第 0 章;自测;读 3 份 FDE 岗位描述
-- [ ] W2 第 1 章 集成与 API;练习 1
+- [ ] W1 第 0 章;[预备章 Linux 基础](01-foundations/00-linux-basics.md)（L.1–L.5）;自测;读 3 份 FDE 岗位描述
+- [ ] W2 完成预备章（L.6–L.10）;第 1 章 集成与 API;练习 1
 - [ ] W3 第 1 章 SQL 与建模;启动 P1
 - [ ] W4 第 2 章 部署与安全;完成 P1
 - [ ] W5 [第 3.1–3.2 节](02-ai-llm/02-applications-rag-agent-eval.md) 业务选型与 RAG;启动 P2
