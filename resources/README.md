@@ -1,5 +1,7 @@
 # 精选资源(链接已核实)
 
+> 🌐 [English](README.en.md)
+
 > [🏠 返回主页](../README.md)
 ## 书籍
 - 《Designing Data-Intensive Applications》— https://dataintensive.net/

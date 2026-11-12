@@ -1,5 +1,7 @@
 # 第 0 章 FDE 岗位全景
 
+> 🌐 [English](README.en.md)
+
 > [🏠 返回主页](../README.md)
 
 ## 学习目标

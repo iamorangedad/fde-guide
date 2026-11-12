@@ -1,5 +1,7 @@
 # 3.4 微调与对齐：SFT、RLHF、PPO、GRPO、DPO
 
+> 🌐 [English](04-finetuning-and-alignment.en.md)
+
 > [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.3](03-pretraining-and-adaptation.md) · [下一节 3.5](05-neural-nets-and-transformers.md)
 
 ## 先修

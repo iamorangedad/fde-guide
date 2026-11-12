@@ -1,5 +1,7 @@
 # 第 4 章 发现、界定与干系人管理
 
+> 🌐 [English](README.en.md)
+
 > [🏠 返回主页](../README.md)
 
 ## 学习目标

@@ -1,5 +1,7 @@
 # 3.3 预训练与领域适应（概念先行）
 
+> 🌐 [English](03-pretraining-and-adaptation.en.md)
+
 > [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.2](02-applications-rag-agent-eval.md) · [下一节 3.4](04-finetuning-and-alignment.md)
 
 ## 先修

@@ -1,5 +1,7 @@
 # 3.7 训练与推理系统性能
 
+> 🌐 [English](07-training-and-inference-systems.en.md)
+
 > [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.6](06-pytorch-engineering.md) · [下一节 3.8](08-cuda-and-gpu-kernels.md)
 
 ## 先修

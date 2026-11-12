@@ -1,5 +1,7 @@
 # 3.8 GPU 与 CUDA（选修进阶）
 
+> 🌐 [English](08-cuda-and-gpu-kernels.en.md)
+
 > [🏠 返回主页](../README.md) · [返回本章入口](README.md) · [上一节 3.7](07-training-and-inference-systems.md)
 
 ## 先修

@@ -1,5 +1,7 @@
 # 学习路线(12 周;在职可按 24 周,每项时长翻倍)
 
+> 🌐 [English](ROADMAP.en.md)
+
 > [🏠 返回主页](./README.md)
 - [ ] W1 第 0 章;[预备章 Linux 基础](01-foundations/00-linux-basics.md)（L.1–L.5）;自测;读 3 份 FDE 岗位描述
 - [ ] W2 完成预备章（L.6–L.10）;第 1 章 集成与 API;练习 1
